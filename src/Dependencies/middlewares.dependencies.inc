@@ -9,3 +9,7 @@
 {%dependencies.inc}
 
 {---put your dependencies registration here---}
+container.add(
+    'jsonReq',
+    TJsonContentTypeMiddlewareFactory.create()
+);

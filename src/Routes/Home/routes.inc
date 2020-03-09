@@ -6,4 +6,4 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-{$INCLUDE middlewares.dependencies.inc}
+router.get('/', container.get('homeController') as IRequestHandler);

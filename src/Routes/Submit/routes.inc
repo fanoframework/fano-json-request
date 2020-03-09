@@ -6,4 +6,5 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-{$INCLUDE middlewares.dependencies.inc}
+router.post('/', container.get('submitController') as IRequestHandler)
+.add(container['jsonReq'] as IMiddleware);
