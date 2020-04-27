@@ -24,7 +24,7 @@ command line tools to help scaffolding web application using Fano Framework.
 
 ```
 $ git clone https://github.com/fanofamework/fano-json-request.git --recursive
-$ cd fano-verb-tunneling
+$ cd fano-json-request
 $ ./tools/config.setup.sh
 $ ./build.sh
 ```
