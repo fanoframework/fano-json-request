@@ -1,6 +1,13 @@
 # Fano Web Framework Skeleton Application
 
-Web application skeleton using Fano Framework, Pascal web application framework
+This example web application using Fano Framework, Pascal web application framework, demonstrates how to handle request with JSON content type. For example when invoke as
+
+```
+$ curl --header "Content-Type: application/json" \
+    --request POST \
+    --data '{"username":"xyz","password":"xyz"}' \
+    http://yourapp.fano/submit
+```
 
 This project is generated using [Fano CLI](https://github.com/fanoframework/fano-cli)
 command line tools to help scaffolding web application using Fano Framework.
@@ -8,34 +15,18 @@ command line tools to help scaffolding web application using Fano Framework.
 ## Requirement
 
 - [Free Pascal](https://www.freepascal.org/) >= 3.0
-- [libcurl development](https://curl.haxx.se/libcurl/)
 - Web Server (Apache, nginx)
 - [Fano Web Framework](https://github.com/fanoframework/fano)
 
 ## Installation
 
-### Build
-
-#### libcurl development package installation
-
-Check if libcurl package for development is installed by running `curl-config`.
+### TLDR
 
 ```
-$ curl-config --version
-```
-If libcurl installed you will get something like `libcurl x.xx.x` where `x.xx.x` is version. For example `libcurl 7.47.0` otherwise you get
-
-```
-The program 'curl-config' can be found in the following packages:
- * libcurl4-gnutls-dev
- * libcurl4-nss-dev
- * libcurl4-openssl-dev
-Try: sudo apt install <selected package>
-```
-
-In case libcurl not installed, run
-```
-$ sudo apt install libcurl4-gnutls-dev
+$ git clone https://github.com/fanofamework/fano-json-request.git --recursive
+$ cd fano-verb-tunneling
+$ ./tools/config.setup.sh
+$ ./build.sh
 ```
 
 ### Free Pascal installation
@@ -48,7 +39,7 @@ If you see something like `Free Pascal Compiler version 3.0.4`,  you are good to
 
 Clone this repository
 
-    $ git clone git@github.com:fanofamework/fano-app.git --recursive
+    $ git clone git@github.com:fanofamework/fano-json-request.git --recursive
 
 `--recursive` is needed so git also pull [Fano](https://github.com/fanoframework/fano) repository.
 
